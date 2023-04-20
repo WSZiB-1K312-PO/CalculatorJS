@@ -1,0 +1,169 @@
+body{
+  background: linear-gradient(to right, #4b6cb7, #ee4266, #b13c8b);
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+  width: 400px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 20px;
+  background-color: #e5e5e5;
+  border-radius: 10px;
+}
+
+#result {
+  padding-right: 30px;
+  font-size: 56px;
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+#number {
+  padding-right: 30px;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+button {
+  font-size: 24px;
+  padding: 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 100px;
+  background-color: #e5e5e5;
+  color: #333;
+  cursor: pointer;
+  width: 70px;
+  height: 70px;
+}
+
+button:hover {
+  background-color: #ccc;
+}
+
+button:active {
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+button#enter-button {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+button#enter-button:active {
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+button#remove-all-button {
+  background-color: #a6a6a6;
+  color: #fff;
+}
+
+button#remove-all-button:hover {
+  background-color: #8c8c8c;
+}
+
+button#remove-all-button:active {
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+button#remove-last-char-button {
+  background-color: #a6a6a6;
+  color: #fff;
+}
+
+button#remove-last-char-button:hover {
+  background-color: #8c8c8c;
+}
+
+button#remove-last-char-button:active {
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+button#dot-button {
+  font-size: 36px;
+  padding: 10px 28px;
+  width: 72px;
+}
+
+button#zero-button {
+  width: 150px;
+}
+
+button#divide-button,
+button#multiply-button,
+button#minus-button,
+button#plus-button,
+button#percent-button {
+  background-color: #ff9500;
+  color: #fff;
+
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  #result {
+    font-size: 36px;
+  }
+
+  #number {
+    font-size: 18px;
+  }
+
+  button {
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+  }
+
+  button#dot-button {
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+  }
+
+
+  button#enter-button {
+    background-color: #333333;
+    color: #fff;
+    font-size: 18px;
+  }
+
+  button#zero-button {
+    background-color: #e5e5e5;
+    color: #333;
+    width: 95px;
+  }
+}
+
+

@@ -34,30 +34,30 @@ document.querySelector("#dot-button").addEventListener("click", () => {
 
 document.querySelector("#remove-last-char-button").addEventListener("click", () => {
   const element = document.querySelector("#number");
-  element.innerText = element.innerText.substring(0, element.innerText.length - 1);
+  element.innerText= element.innerText.substring(0, element.innerText.length -1);
 
-  if(element.innerText.length === 0) {
-    element.innerText = '0';
+  if(element.innerText.length === 0){
+    element.innerText = "0";
   }
 });
 
 document.querySelector("#remove-all-button").addEventListener("click", () => {
-  document.querySelector("#result").innerText = '0';
-  document.querySelector("#number").innerText = '0';
+  document.querySelector("#result").innerText = "0";
+  document.querySelector("#number").innerText = "0";
 });
 
 document.querySelector("#enter-button").addEventListener("click", () => {
   document.querySelector("#result").innerText = document.querySelector("#number").innerText;
-  document.querySelector("#number").innerText = '0';
+  document.querySelector("#number").innerText = "0";
 });
 
 function operationClickListener(operation) {
   return () => {
-    const resultElement = document.querySelector("#result");
-    const numberElement = document.querySelector("#number");
+    const result = document.querySelector("#result");
+    const number = document.querySelector("#number");
 
-    resultElement.innerText = Math.round(operation(parseFloat(resultElement.innerText), parseFloat(numberElement.innerText)) * 100000) / 100000;
-    numberElement.innerText = '0';
+    result.innerText = Math.round(operation(parseFloat(result.innerText), parseFloat(number.innerText)) * 100000)/100000;
+    number.innerText = "0";
   }
 }
 
@@ -65,4 +65,3 @@ document.querySelector("#plus-button").addEventListener("click", operationClickL
 document.querySelector("#minus-button").addEventListener("click", operationClickListener((a, b) => a - b));
 document.querySelector("#multiply-button").addEventListener("click", operationClickListener((a, b) => a * b));
 document.querySelector("#divide-button").addEventListener("click", operationClickListener((a, b) => a / b));
-document.querySelector("#percent-button").addEventListener("click", operationClickListener((a, b) => a * (b / 100)));

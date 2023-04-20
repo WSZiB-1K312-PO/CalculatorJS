@@ -14,39 +14,39 @@
 <body>
   <div class="page">
     <section class="calculator">
-      <div class="container">
+      <div class="monitor">
         <p id="result">0</p>
         <p id="number">0</p>
       </div>
-      <div>
-        <div>
-          <button type="button" id="one-button">1</button>
-          <button type="button" id="two-button">2</button>
-          <button type="button" id="three-button">3</button>
-          <button type="button" id="plus-button">+</button>
-          <button type="button" id="remove-all-button">CE</button>
-        </div>
-        <div>
-          <button type="button" id="four-button">4</button>
-          <button type="button" id="five-button">5</button>
-          <button type="button" id="six-button">6</button>
-          <button type="button" id="minus-button">-</button>
-          <button type="button" id="percent-button">%</button>
-        </div>
-        <div>
-          <button type="button" id="seven-button">7</button>
-          <button type="button" id="eight-button">8</button>
-          <button type="button" id="nine-button">9</button>
-          <button type="button" id="multiply-button">*</button>
-          <button type="button" id="enter-button">E</button>
-        </div>
-        <div>
-          <button type="button" id="remove-last-char-button">C</button>
-          <button type="button" id="zero-button">0</button>
-          <button type="button" id="dot-button">.</button>
-          <button type="button" id="divide-button">:</button>
-        </div>
-      </div>
+      <table>
+        <tr>
+          <td><button type="button" id="one-button">1</button></td>
+          <td><button type="button" id="two-button">2</button></td>
+          <td><button type="button" id="three-button">3</button></td>
+          <td><button type="button" id="plus-button">+</button></td>
+          <td><button type="button" id="remove-all-button">CE</button></td>
+        </tr>
+        <tr>
+          <td><button type="button" id="four-button">4</button></td>
+          <td><button type="button" id="five-button">5</button></td>
+          <td><button type="button" id="six-button">6</button></td>
+          <td><button type="button" id="minus-button">-</button></td>
+          <td><button type="button" id="percent-button">%</button></td>
+        </tr>
+        <tr>
+          <td><button type="button" id="seven-button">7</button></td>
+          <td><button type="button" id="eight-button">8</button></td>
+          <td><button type="button" id="nine-button">9</button></td>
+          <td><button type="button" id="multiply-button">*</button></td>
+          <td rowspan="2"><button type="button" id="enter-button">E</button></td>
+        </tr>
+        <tr>
+          <td><button type="button" id="remove-last-char-button">C</button></td>
+          <td><button type="button" id="zero-button">0</button></td>
+          <td><button type="button" id="dot-button">.</button></td>
+          <td><button type="button" id="divide-button">/</button></td>
+        </tr>
+      </table>
     </section>
   </div>
   <script src="js/main.js"></script>
